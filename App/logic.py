@@ -132,6 +132,10 @@ def load_books_tags(catalog, filename):
     :returns: Tamaño del conjunto de tags de los libros
     :rtype: int
     """
+    catologo = catalog["model"]
+    booksfile = os.path.join(cf.data_dir, filename)
+    catalog = model.addBookTags(catalog, booksfile)
+    return model.bookTagSize(catalog)
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
     pass
 
