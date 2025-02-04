@@ -132,12 +132,12 @@ def load_books_tags(catalog, filename):
     :returns: Tamaño del conjunto de tags de los libros
     :rtype: int
     """
-    catologo = catalog["model"]
-    booksfile = os.path.join(cf.data_dir, filename)
-    catalog = model.addBookTags(catalog, booksfile)
-    return model.bookTagSize(catalog)
-    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    catologo = catalog["logic"]
+    booksfile = os.path.join(data_dir, filename)
+    catalog = add_book_tag(catalog, booksfile)
+    return book_tag_size(catalog)
+    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2    
+    
 
 
 def first_book(catalog):
@@ -170,7 +170,7 @@ def add_book_tags_file(catalog, booktagsfile):
     :returns: catalog
     :rtype: dict
     """
-    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
+        # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
     catalog = ["book_tags"] = set.new_set
     return catalog
 
