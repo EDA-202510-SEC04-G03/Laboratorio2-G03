@@ -155,7 +155,7 @@ def last_book(catalog):
     Devuelve el ultimo libro del catalogo
     """
     # TODO: Mods Est-3 en el Lab 2
-    return set.get_last element(catalog["books"])
+    return set.get_last_element(catalog["books"])
 
 # Funciones para la manipulacion de los datos
 
