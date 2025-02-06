@@ -201,7 +201,6 @@ def add_book_tag(catalog, booktag):
     set.add_element(catalog["book_tags"], booktag)
     return catalog
 
-
 # Funciones de consulta
 
 def book_size(catalog):
